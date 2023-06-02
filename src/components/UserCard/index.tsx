@@ -47,7 +47,7 @@ const UserCard: FC<UserCardProps> = ({
             {linkedIn ? (
               <>
                 <RxDividerVertical color="#ececec" />
-                <a href={`http://${linkedIn}`}>
+                <a href={`https://${linkedIn}`}>
                   <BsLinkedin color="#2866b1" />
                 </a>
               </>
@@ -58,7 +58,7 @@ const UserCard: FC<UserCardProps> = ({
         </div>
         <div className="UserCard-subTitle">
           <h4 className="UserCard-currentTitle">{current_title}</h4>
-          <RxDotFilled color="#ededed" />
+          <RxDotFilled className="UserCard-subTitle-dot" color="#ededed" />
           <h4 className="UserCard-location">{location}</h4>
         </div>
       </div>

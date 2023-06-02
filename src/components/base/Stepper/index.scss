@@ -35,9 +35,8 @@
       content: "";
       margin-top: 2px;
       position: absolute;
-      // top: calc(var(--circle-size) + var(--spacing) + 1);
       top: calc(50% + 10px);
-      bottom: clac(var(--spacing) + 1);
+      bottom: calc(var(--spacing) + 1);
       transform: translateX(calc(var(--circle-size) / 2));
       width: 1px;
       height: calc(100% - 20px);
@@ -48,8 +47,8 @@
 
 .Stepper-stepper-content {
   color: #120f2c;
-  line-height: 20px;
-  line-break: anywhere;
+  line-height: 25px;
+  line-break: auto;
   margin: 5px 0px;
 }
 

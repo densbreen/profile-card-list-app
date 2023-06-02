@@ -12,8 +12,8 @@ const Stepper: FC<StepperProps> = ({ title, content }) => {
     <div className="Stepper-wrapper">
       <h4 className="Stepper-title">{title}</h4>
       <ol className="Stepper-stepper">
-        {content.map((item) => (
-          <li className="Stepper-stepper-item">
+        {content.map((item, i) => (
+          <li key={i} className="Stepper-stepper-item">
             <img className="Stepper-stepper-logo" src={item.logo} />
             <p className="Stepper-stepper-content">{item.title}</p>
           </li>
