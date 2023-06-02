@@ -1,0 +1,77 @@
+:root {
+  --circle-size: 10px;
+  --spacing: 3px;
+}
+
+.Stepper-title {
+  color: #161430;
+  font-style: italic;
+  font-weight: 400;
+  width: 100px;
+  margin: 15px 0px;
+}
+.Stepper-stepper {
+  padding: 0;
+  flex: 1;
+}
+.Stepper-stepper-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  font-weight: 400;
+  &:before {
+    content: "";
+    margin-top: 2px;
+    flex: 0 0 var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background-color: #ededed;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      content: "";
+      margin-top: 2px;
+      position: absolute;
+      // top: calc(var(--circle-size) + var(--spacing) + 1);
+      top: calc(50% + 10px);
+      bottom: clac(var(--spacing) + 1);
+      transform: translateX(calc(var(--circle-size) / 2));
+      width: 1px;
+      height: calc(100% - 20px);
+      background-color: #ededed;
+    }
+  }
+}
+
+.Stepper-stepper-content {
+  color: #120f2c;
+  line-height: 20px;
+  line-break: anywhere;
+  margin: 5px 0px;
+}
+
+.Stepper-stepper-logo {
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px;
+}
+
+.Stepper-stepper-desc {
+  color: grey;
+}
+
+.Stepper-wrapper {
+  display: flex;
+  column-gap: 10px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Stepper-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

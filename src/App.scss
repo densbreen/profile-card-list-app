@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "League Spartan";
+  font-size: 20px;
+  margin: 0;
+}
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: none;
+}
+* {
+  margin: 0;
+}
+.App {
+  background-color: #efefef;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 25px;
+  padding: 50px;
+  align-content: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .App {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .App {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .App {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .App {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .App {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
